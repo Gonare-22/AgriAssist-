@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AgriAssist Agent</title>
+  <link rel="stylesheet" href="/static/styles.css"/>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>AgriAssist Agent</h1>
+      <p class="subtitle">Diagnose crop issues and get treatment advice. Upload a leaf photo <em>or</em> describe symptoms.</p>
+    </header>
+
+    <section class="card">
+      <form id="form" enctype="multipart/form-data">
+        <div class="row">
+          <label>Crop (optional)</label>
+          <input type="text" name="crop" placeholder="Tomato, Apple, Wheat..." />
+        </div>
+
+        <div class="row">
+          <label>Leaf Image</label>
+          <input type="file" name="file" accept="image/*" id="fileInput"/>
+        </div>
+
+        <div class="row">
+          <label>Or describe symptoms</label>
+          <textarea name="description" rows="3" placeholder="e.g., white powder on leaves; yellowing between veins; small brown spots..."></textarea>
+        </div>
+
+        <button type="submit" id="analyzeBtn">Analyze</button>
+      </form>
+    </section>
+
+    <section class="card" id="results" style="display:none;">
+      <h2 id="resultTitle">Result</h2>
+      <p id="resultMeta"></p>
+      <ul id="adviceList"></ul>
+      <div id="actions" class="actions"></div>
+    </section>
+
+    <footer>
+      <p>Demo build for Agentic AI in Agriculture • <strong>Capital One Hackathon</strong></p>
+    </footer>
+  </div>
+
+  <script src="/static/main.js"></script>
+</body>
+</html>
