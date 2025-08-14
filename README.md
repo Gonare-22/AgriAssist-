@@ -1,4 +1,4 @@
-# AgriAssist Agent 
+# AgriAssist - Agent 
 
 Diagnose crop issues from a **leaf photo or text symptoms**, then get **treatment steps** and **agentic follow-ups** like preventive schedules, store finder, and reminders.
 
