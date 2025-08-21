@@ -11,17 +11,17 @@ Diagnose crop issues from a **leaf photo or text symptoms**, then get **treatmen
 
 ## Quickstart
 ```bash
-# 1) Create & activate venv (recommended)
+1) Create & activate venv (recommended)
 python -m venv .venv
 source .venv/bin/activate   # Windows: .venv\Scripts\activate
 
-# 2) Install deps (Torch download may take time on first install)
+2) Install deps (Torch download may take time on first install)
 pip install -r requirements.txt
 
-# 3) (Optional) Faster demo without model load:
+3) (Optional) Faster demo without model load:
 #    export DEMO_MODE=1   # Windows PowerShell: $env:DEMO_MODE="1"
 
-# 4) Run
+4) Run
 python app.py
 ```
 
